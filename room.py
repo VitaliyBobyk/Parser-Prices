@@ -6,7 +6,7 @@ urls_used = ['-11-pro-max-bu/', '-11-pro-bu/', '-xs-max-bu/', '-xs-bu/', '-xr-bu
 pages =[]
 class AppleRoom():
     def new(self):
-        f = open('new.txt', 'a')
+        f = open('new(room).txt', 'a')
         for x in urls_new:
             pages.append(requests.get('https://appleroom.ua/category/iphone' + x))
             for r in pages:
@@ -23,7 +23,7 @@ class AppleRoom():
         return "Done"
 
     def used(self):
-        f = open('used.txt', 'a')
+        f = open('used(room).txt', 'a')
         for x in urls_used:
             pages.append(requests.get('https://appleroom.ua/category/iphone' + x))
             for r in pages:
