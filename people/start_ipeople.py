@@ -14,12 +14,15 @@ b2 = Button(root, text="Used", width=9, height=1, bg='#808080', fg='black', font
 
 
 def leftclick1(event):
-    from ipeople import Ipeople
-    Ipeople.new("New")
-def leftclick2(event):
-    from ipeople import Ipeople
-    Ipeople.used("Used")
+    from people.ipeople import Ipeople
+    start = Ipeople()
+    start.new()
 
+
+def leftclick2(event):
+    from people.ipeople import Ipeople
+    start = Ipeople()
+    start.used()
 
 
 el.pack()

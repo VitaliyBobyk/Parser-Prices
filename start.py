@@ -13,10 +13,13 @@ b2 = Button(root, text="iPeople ", width=12, height=1, bg='#808080', fg='black',
 
 
 def leftclick1(event):
-    import start_room
-def leftclick2(event):
-    import start_ipeople
+    from room import start_room
+    start_room
 
+
+def leftclick2(event):
+    from people import start_ipeople
+    start_ipeople
 
 
 b1.pack(padx=20, pady=20)
