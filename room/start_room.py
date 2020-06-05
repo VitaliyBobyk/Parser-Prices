@@ -14,13 +14,13 @@ b2 = Button(root, text="Used", width=9, height=1, bg='#808080', fg='black', font
 
 
 def leftclick1(event):
-    from room.room import AppleRoom
+    from room.appleroom import AppleRoom
     start = AppleRoom()
     start.new()
 
 
 def leftclick2(event):
-    from room.room import AppleRoom
+    from room.appleroom import AppleRoom
     start = AppleRoom()
     start.used()
 
